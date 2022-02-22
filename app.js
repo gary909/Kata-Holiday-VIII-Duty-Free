@@ -1,5 +1,6 @@
 function dutyFree(normPrice, discount, hol){
-
+    var myAns = hol / ((normPrice / 100) * discount);
+    return Math.floor(myAns);
 }
 
 console.log(dutyFree(12, 50, 1000)); // 166
